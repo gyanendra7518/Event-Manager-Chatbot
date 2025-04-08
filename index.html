@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Master - Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- User Info Form -->
+  <div id="user-info-form">
+    <h2>Welcome to Event Master ChatBot</h2>
+    <input type="text" id="name" placeholder="Enter your name" />
+    <input type="email" id="email" placeholder="Enter your email" />
+    <button onclick="submitUserInfo()">Start Chat</button>
+  </div>
+
+  <!-- Chat Interface -->
+  <div class="chat-container">
+    <div class="chat-header">Event Master Chatbot</div>
+    <div class="chat-messages" id="chat-messages"></div>
+    <div class="quick-replies" id="quick-replies"></div>
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Type your message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
